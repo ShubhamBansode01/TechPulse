@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+
 Sitemap: https://tech-pulse-nu.vercel.app/sitemap.xml
