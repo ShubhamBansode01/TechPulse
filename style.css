@@ -1,0 +1,410 @@
+/* ==========================================================================
+   TECHPULSE - MASTER STYLESHEET
+   ========================================================================== */
+
+/* --- 1. Fonts & CSS Variables (Theme Control) --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    /* Light Mode (Default) */
+    --bg-color: #f4f7f6;
+    --text-color: #2b2b2b;
+    --card-bg: #ffffff;
+    --primary-color: #4361ee;
+    --secondary-color: #3f37c9;
+    --border-color: #e2e8f0;
+    --header-bg: rgba(255, 255, 255, 0.85);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.dark-mode {
+    /* Dark Mode Override */
+    --bg-color: #0f172a;
+    --text-color: #f8fafc;
+    --card-bg: #1e293b;
+    --primary-color: #3b82f6;
+    --secondary-color: #60a5fa;
+    --border-color: #334155;
+    --header-bg: rgba(15, 23, 42, 0.85);
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* --- 2. Global Resets & Typography --- */
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: var(--transition);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* --- 3. Premium Glassmorphism Header --- */
+header {
+    background-color: var(--header-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    padding: 15px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav { 
+    display: flex; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav a:hover, nav a.active {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    box-shadow: 0 4px 10px rgba(67, 97, 238, 0.3);
+}
+
+.controls { 
+    display: flex; 
+    gap: 15px; 
+    align-items: center; 
+}
+
+.btn-icon {
+    background: none; 
+    border: none; 
+    font-size: 20px;
+    color: var(--text-color); 
+    cursor: pointer; 
+    transition: var(--transition);
+}
+
+.btn-icon:hover { 
+    color: var(--primary-color); 
+    transform: scale(1.1); 
+}
+
+.hamburger { display: none; }
+
+/* --- 4. Main Layout & Cards --- */
+.container {
+    max-width: 900px; 
+    margin: 40px auto; 
+    padding: 0 20px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.card {
+    background: var(--card-bg);
+    border-radius: 16px; 
+    padding: 30px; 
+    margin-bottom: 30px;
+    box-shadow: var(--shadow); 
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+    overflow: hidden; /* Keeps featured images contained nicely */
+}
+
+.card:hover { 
+    transform: translateY(-5px); 
+}
+
+.card h2 a { 
+    color: var(--text-color); 
+    text-decoration: none; 
+    transition: var(--transition); 
+}
+
+.card h2 a:hover { 
+    color: var(--primary-color); 
+}
+
+.badge {
+    background: rgba(67, 97, 238, 0.1); 
+    color: var(--primary-color);
+    padding: 6px 12px; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    font-weight: 600;
+    display: inline-block; 
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white; 
+    padding: 10px 24px; 
+    border-radius: 8px;
+    text-decoration: none; 
+    font-weight: 600; 
+    transition: var(--transition);
+    border: none; 
+    cursor: pointer;
+}
+
+.btn-primary:hover { 
+    box-shadow: 0 8px 20px rgba(67, 97, 238, 0.4); 
+    transform: translateY(-2px); 
+}
+
+/* --- 5. Images & Media --- */
+.featured-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin: -30px -30px 20px -30px; /* Pulls image to the edges of the card */
+    width: calc(100% + 60px);
+}
+
+.article-img {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin: 20px 0 5px 0;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.img-caption {
+    text-align: center;
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+/* --- 6. Social Share Buttons --- */
+.share-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 30px 0;
+    padding: 20px 0;
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.share-title {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--text-color);
+}
+
+.share-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.share-btn.whatsapp { background-color: #25D366; }
+.share-btn.twitter { background-color: #000000; }
+.share-btn.facebook { background-color: #1877F2; }
+
+.share-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.dark-mode .share-btn.twitter {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* --- 7. Page Navigation (Next/Prev) --- */
+.page-navigation {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.nav-btn {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    flex: 1;
+    padding: 15px 20px;
+    border-radius: 8px;
+    background: var(--bg-color);
+    border: 1px solid var(--border-color);
+    transition: var(--transition);
+}
+
+.nav-btn:hover {
+    border-color: var(--primary-color);
+    box-shadow: 0 4px 10px rgba(67, 97, 238, 0.15);
+    transform: translateY(-3px);
+}
+
+.nav-btn.prev { align-items: flex-start; text-align: left; }
+.nav-btn.next { align-items: flex-end; text-align: right; }
+
+.nav-label {
+    font-size: 12px;
+    color: var(--primary-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.nav-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-color);
+}
+
+
+/* --- 9. Forms & Contact Layout --- */
+.contact-wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 40px;
+}
+
+.contact-info i { 
+    color: var(--primary-color); 
+    font-size: 24px; 
+    margin-bottom: 15px; 
+}
+
+.form-group { margin-bottom: 20px; }
+.form-group label { 
+    display: block; 
+    margin-bottom: 8px; 
+    font-weight: 600; 
+    font-size: 14px; 
+}
+
+.form-control {
+    width: 100%; 
+    padding: 12px 15px; 
+    border-radius: 8px;
+    border: 1px solid var(--border-color); 
+    background: var(--bg-color);
+    color: var(--text-color); 
+    font-family: 'Poppins', sans-serif;
+    transition: var(--transition);
+}
+
+.form-control:focus { 
+    outline: none; 
+    border-color: var(--primary-color); 
+    box-shadow: 0 0 0 3px rgba(67,97,238,0.2); 
+}
+
+/* --- 10. Scroll To Top Button --- */
+#scrollTop {
+    position: fixed; 
+    bottom: 30px; 
+    right: 30px;
+    background: var(--primary-color); 
+    color: white;
+    width: 45px; 
+    height: 45px; 
+    border-radius: 50%; 
+    border: none;
+    font-size: 18px; 
+    cursor: pointer; 
+    display: none;
+    box-shadow: 0 4px 15px rgba(67, 97, 238, 0.4); 
+    transition: var(--transition);
+    z-index: 1000;
+}
+
+#scrollTop:hover { 
+    transform: translateY(-5px); 
+}
+
+/* --- 11. Mobile Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .hamburger { display: block; }
+    
+    /* Mobile Navigation Drawer */
+    nav {
+        position: absolute; 
+        top: 100%; 
+        left: 0; 
+        width: 100%;
+        background: var(--header-bg); 
+        backdrop-filter: blur(10px);
+        flex-direction: column; 
+        padding: 20px 0; 
+        gap: 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
+        transition: var(--transition);
+    }
+    
+    nav.show { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+    
+    /* Adjusting card layouts for smaller screens */
+    .contact-wrapper { grid-template-columns: 1fr; }
+    
+    .card { padding: 20px; }
+    
+    .featured-img {
+        height: 200px;
+        margin: -20px -20px 20px -20px;
+        width: calc(100% + 40px);
+    }
+    
+    /* Stacking the navigation buttons */
+    .page-navigation {
+        flex-direction: column;
+    }
+    
+    .nav-btn.prev, .nav-btn.next {
+        align-items: flex-start;
+        text-align: left;
+    }
+}

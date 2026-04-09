@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | TechPulse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific CSS for Direct Action Contact Cards */
+        .contact-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .action-cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .action-card {
+            background: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            text-decoration: none;
+            color: var(--text-color);
+            transition: var(--transition);
+            display: block;
+        }
+
+        .action-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 20px rgba(67, 97, 238, 0.1);
+        }
+
+        .action-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+            display: inline-block;
+        }
+
+        /* Brand Colors for Icons */
+        .email-icon { color: #ea4335; }
+        .wa-icon { color: #25d366; }
+        .yt-icon { color: #ff0000; }
+        .x-icon { color: #1da1f2; }
+        
+        .dark-mode .x-icon { color: #ffffff; }
+
+        .action-card h3 {
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .action-card p {
+            font-size: 14px;
+            color: #888;
+        }
+        
+        .action-btn {
+            display: inline-block;
+            margin-top: 15px;
+            font-weight: 600;
+            color: var(--primary-color);
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo"><i class="fa-solid fa-microchip"></i> TechPulse</a>
+        <nav id="nav-menu">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-user-tie"></i> About</a>
+            <a href="contact.html" class="active"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </nav>
+        <div class="controls">
+            <button id="theme-toggle" class="btn-icon"><i class="fa-solid fa-moon"></i></button>
+            <button id="menu-toggle" class="btn-icon hamburger"><i class="fa-solid fa-bars"></i></button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            
+            <div class="contact-header">
+                <span class="badge"><i class="fa-solid fa-satellite-dish"></i> We're Online</span>
+                <h1 style="font-size: 32px; margin-top: 10px; margin-bottom: 15px;">Let's Connect</h1>
+                <p style="color: #888;">Have a tech question, a business inquiry, or want us to review a gadget? Choose the best way to reach us below.</p>
+            </div>
+            
+            <div class="action-cards-grid">
+                
+                <a href="mailto:udaanstories01@gmail.com?subject=Inquiry from TechPulse" class="action-card">
+                    <i class="fa-solid fa-envelope action-icon email-icon"></i>
+                    <h3>Send an Email</h3>
+                    <p>For business inquiries and detailed gadget review requests.</p>
+                    <span class="action-btn">Write Email <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+                <a href="https://www.youtube.com/@ShortsKing-o5u" class="action-card" target="_blank">
+                    <i class="fa-brands fa-youtube action-icon yt-icon"></i>
+                    <h3>YouTube Channel</h3>
+                    <p>Watch our latest tech shorts, reviews, and cinematic edits.</p>
+                    <span class="action-btn">Subscribe <i class="fa-solid fa-arrow-right"></i></span>
+                </a>
+
+        </div>
+    </div>
+
+    <footer style="background: var(--card-bg); padding: 30px; text-align: center; border-top: 1px solid var(--border-color); margin-top: 40px;">
+        <p style="color: var(--text-color); font-weight: 600;">&copy; 2026 TechPulse. All rights reserved.</p>
+        <p style="margin-top: 10px;">
+            <a href="privacy.html" style="color: var(--primary-color); text-decoration: none; margin: 0 10px;">Privacy Policy</a>
+            <a href="terms.html" style="color: var(--primary-color); text-decoration: none; margin: 0 10px;">Terms & Conditions</a>
+            <a href="contact.html" style="color: var(--primary-color); text-decoration: none; margin: 0 10px;">Contact</a>
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
