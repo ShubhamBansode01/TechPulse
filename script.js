@@ -68,3 +68,22 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+// Function to handle Cookie Consent
+function checkCookies() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-banner').style.display = 'flex';
+    }
+}
+
+function acceptCookies() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    document.getElementById('cookie-banner').style.display = 'none';
+}
+
+// Run the check when the page loads
+window.onload = function() {
+    checkCookies();
+    // Keep your existing theme/nav scripts here too!
+};
+
