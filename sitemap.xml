@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/index.html</loc>
+    <lastmod>2026-04-10</lastmod>
+    <priority>1.00</priority>
+  </url>
+  
+  <url><loc>https://tech-pulse-nu.vercel.app/article.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article2.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article3.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article4.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article5.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article6.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article7.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article8.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article9.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/article10.html</loc><lastmod>2026-04-10</lastmod><priority>0.80</priority></url>
+  
+  <url><loc>https://tech-pulse-nu.vercel.app/about.html</loc><lastmod>2026-04-10</lastmod><priority>0.50</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/contact.html</loc><lastmod>2026-04-10</lastmod><priority>0.50</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/privacy.html</loc><lastmod>2026-04-10</lastmod><priority>0.50</priority></url>
+  <url><loc>https://tech-pulse-nu.vercel.app/terms.html</loc><lastmod>2026-04-10</lastmod><priority>0.50</priority></url>
+</urlset>
