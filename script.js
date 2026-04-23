@@ -1,20 +1,62 @@
+/* =========================================
+   GLOBAL FUNCTIONS (For HTML interactions)
+   ========================================= */
+
+// 1. Live Search Logic
+function performSearch() {
+    const searchInput = document.getElementById('site-search');
+    if (searchInput) {
+        const filter = searchInput.value.toLowerCase();
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            const title = card.querySelector('h2')?.innerText.toLowerCase() || "";
+            if (title.includes(filter)) {
+                card.style.display = ""; 
+            } else {
+                card.style.display = "none";
+            }
+        });
+    }
+}
+
+// 2. Cookie Banner Logic
+function acceptCookies() {
+    localStorage.setItem('cookiesAccepted', 'true');
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+        banner.style.display = 'none';
+    }
+}
+
+function checkCookies() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner && !localStorage.getItem('cookiesAccepted')) {
+        banner.style.display = 'flex';
+    }
+}
+
+/* =========================================
+   UI LOGIC (Runs when the page loads)
+   ========================================= */
+
 document.addEventListener('DOMContentLoaded', () => {
 
-    /* --- 1. Theme Toggle Logic --- */
+    // Initialize Cookie Check
+    checkCookies();
+
+    /* --- Theme Toggle Logic --- */
     const themeToggleBtn = document.getElementById('theme-toggle');
     const body = document.body;
     const currentTheme = localStorage.getItem('theme');
 
-    // Apply saved theme on load
     if (currentTheme === 'dark') {
         body.classList.add('dark-mode');
-        // Only change icon if the button actually exists on the page
         if (themeToggleBtn) {
             themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
         }
     }
 
-    // Only attach click event if the theme button exists
     if (themeToggleBtn) {
         themeToggleBtn.addEventListener('click', () => {
             body.classList.toggle('dark-mode');
@@ -29,17 +71,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* --- 2. Mobile Menu Logic --- */
+    /* --- Mobile Menu Logic --- */
     const menuToggle = document.getElementById('menu-toggle');
     const nav = document.getElementById('nav-menu');
 
-    // Only attach click event if both the menu button and nav exist
     if (menuToggle && nav) {
         menuToggle.addEventListener('click', () => {
             nav.classList.toggle('show');
             const icon = menuToggle.querySelector('i');
             
-            // Safety check for the icon
             if (icon) {
                 if (nav.classList.contains('show')) {
                     icon.classList.replace('fa-bars', 'fa-xmark');
@@ -50,10 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    /* --- 3. Scroll to Top Button Logic --- */
+    /* --- Scroll to Top Button Logic --- */
     const scrollTopBtn = document.getElementById('scrollTop');
     
-    // Only attach scroll and click events if the scroll button exists on this specific page
     if (scrollTopBtn) {
         window.addEventListener('scroll', () => {
             if (window.scrollY > 300) {
@@ -68,22 +107,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
-
-// Function to handle Cookie Consent
-function checkCookies() {
-    if (!localStorage.getItem('cookiesAccepted')) {
-        document.getElementById('cookie-banner').style.display = 'flex';
-    }
-}
-
-function acceptCookies() {
-    localStorage.setItem('cookiesAccepted', 'true');
-    document.getElementById('cookie-banner').style.display = 'none';
-}
-
-// Run the check when the page loads
-window.onload = function() {
-    checkCookies();
-    // Keep your existing theme/nav scripts here too!
-};
 
