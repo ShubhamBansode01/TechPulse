@@ -4,48 +4,149 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Sitemap | TechPulse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="canonical" href="https://tech-pulse-nu.vercel.app/sitemap.html">
+    
+    <meta name="description" content="A complete HTML sitemap of TechPulse. Easily navigate through all our tech articles, guides, and legal pages.">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tech-pulse-nu.vercel.app/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sitemap"
+      }]
+    }
+    </script>
 </head>
 <body>
+
     <header>
-        <a href="index.html" class="logo">TechPulse</a>
+        <a href="index.html" class="logo"><i class="fa-solid fa-microchip"></i> TechPulse</a>
+        <nav id="nav-menu">
+            <a href="index.html"><i class="fa-solid fa-house"></i> Home</a>
+            <a href="about.html"><i class="fa-solid fa-user-tie"></i> About</a>
+            <a href="contact.html"><i class="fa-solid fa-envelope"></i> Contact</a>
+        </nav>
+        <div class="controls">
+            <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="menu-toggle" class="btn-icon hamburger">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
     </header>
 
     <div class="container">
-        <div class="card">
-            <h1>Website Sitemap</h1>
-            <p style="margin-bottom: 30px; color: #888;">A complete list of all articles and pages on TechPulse.</p>
+        
+        <div class="card" style="padding: 40px;">
             
-            <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 20px;">Main Pages</h2>
-            <ul style="line-height: 2.5; margin-bottom: 40px;">
-                <li><a href="index.html">Homepage</a></li>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <li><a href="privacy-policy.html">Privacy Policy</a></li>
-                <li><a href="terms.html">Terms & Conditions</a></li>
-            </ul>
+            <div style="font-size: 13px; color: var(--primary-color); margin-bottom: 20px; font-weight: 600;">
+                <a href="index.html" style="color: inherit; text-decoration: none;">Home</a> <i class="fa-solid fa-chevron-right" style="font-size: 10px; margin: 0 5px;"></i> HTML Sitemap
+            </div>
 
-            <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--primary-color); display: inline-block; margin-bottom: 20px;">All Articles (1-15)</h2>
-            <ul style="line-height: 2.2;">
-                <li><a href="article.html">OnePlus Nord CE 4 vs Nothing Phone (2a)</a></li>
-                <li><a href="article2.html">Best Laptops for Coding 2026</a></li>
-                <li><a href="article3.html">5 Ways to Speed Up Android</a></li>
-                <li><a href="article4.html">What is 5G Explained</a></li>
-                <li><a href="article5.html">Smartwatch vs Fitness Band</a></li>
-                <li><a href="article6.html">Protect Smartphone from Hackers</a></li>
-                <li><a href="article7.html">Top 5 Free AI Tools</a></li>
-                <li><a href="article8.html">Wireless Earbuds Buying Guide</a></li>
-                <li><a href="article9.html">Dark Mode vs Light Mode Science</a></li>
-                <li><a href="article10.html">Build Your First Tech Blog</a></li>
-                <li><a href="article11.html">Smart Home Devices for Beginners</a></li>
-                <li><a href="article12.html">Choosing the Right Graphics Card</a></li>
-                <li><a href="article13.html">Are Foldable Phones Worth It?</a></li>
-                <li><a href="article14.html">Chrome Extensions for Developers</a></li>
-                <li><a href="article15.html">Cloud Storage Comparison</a></li>
-            </ul>
+            <h1 style="font-size: 32px; margin-bottom: 10px;">Website Sitemap</h1>
+            <p style="margin-bottom: 40px; color: #888;">A complete list of all articles and pages available on TechPulse to help you navigate easily.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
+                
+                <div>
+                    <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; font-size: 20px;">
+                        <i class="fa-solid fa-folder-open"></i> Main Pages
+                    </h2>
+                    <ul style="list-style: none; padding: 0; line-height: 2.5;">
+                        <li><a href="index.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Homepage</a></li>
+                        <li><a href="about.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> About Us</a></li>
+                        <li><a href="contact.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Contact Us</a></li>
+                        <li><a href="privacy-policy.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Privacy Policy</a></li>
+                        <li><a href="terms.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Terms & Conditions</a></li>
+                        <li><a href="cookie-policy.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Cookie Policy</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 style="color: var(--primary-color); border-bottom: 2px solid var(--border-color); padding-bottom: 10px; margin-bottom: 20px; font-size: 20px;">
+                        <i class="fa-solid fa-file-lines"></i> All Articles
+                    </h2>
+                    <ul style="list-style: none; padding: 0; line-height: 2.2;">
+                        <li><a href="article.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> OnePlus Nord CE 4 vs Nothing Phone (2a)</a></li>
+                        <li><a href="article2.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Best Laptops for Coding 2026</a></li>
+                        <li><a href="article3.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> 5 Ways to Speed Up Android</a></li>
+                        <li><a href="article4.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> What is 5G Explained</a></li>
+                        <li><a href="article5.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Smartwatch vs Fitness Band</a></li>
+                        <li><a href="article6.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Protect Smartphone from Hackers</a></li>
+                        <li><a href="article7.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Top 5 Free AI Tools</a></li>
+                        <li><a href="article8.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Wireless Earbuds Buying Guide</a></li>
+                        <li><a href="article9.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Dark Mode vs Light Mode Science</a></li>
+                        <li><a href="article10.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Build Your First Tech Blog</a></li>
+                        <li><a href="article11.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Smart Home Devices for Beginners</a></li>
+                        <li><a href="article12.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Choosing the Right Graphics Card</a></li>
+                        <li><a href="article13.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Are Foldable Phones Worth It?</a></li>
+                        <li><a href="article14.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Chrome Extensions for Developers</a></li>
+                        <li><a href="article15.html" style="color: var(--text-color); text-decoration: none;"><i class="fa-solid fa-angle-right" style="color: var(--primary-color); margin-right: 8px;"></i> Cloud Storage Comparison</a></li>
+                    </ul>
+                </div>
+            </div>
+
         </div>
+    </div>
+
+    <footer style="background: var(--card-bg); padding: 50px 20px 30px; border-top: 1px solid var(--border-color); margin-top: 40px;">
+        <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left;">
+            
+            <div>
+                <h3 style="color: var(--primary-color); margin-bottom: 15px;">TechPulse</h3>
+                <p style="font-size: 14px; color: #888; line-height: 1.6;">Premium tech insights and beginner-friendly guides to help you master the digital world.</p>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom: 15px;">Categories</h4>
+                <ul style="list-style: none; font-size: 14px; line-height: 2;">
+                    <li><a href="index.html" style="color: var(--text-color); text-decoration: none;">Smartphones</a></li>
+                    <li><a href="index.html" style="color: var(--text-color); text-decoration: none;">PC & Laptops</a></li>
+                    <li><a href="index.html" style="color: var(--text-color); text-decoration: none;">AI Tools</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 style="margin-bottom: 15px;">Quick Links</h4>
+                <ul style="list-style: none; font-size: 14px; line-height: 2;">
+                    <li><a href="about.html" style="color: var(--text-color); text-decoration: none;">About Creator</a></li>
+                    <li><a href="contact.html" style="color: var(--text-color); text-decoration: none;">Contact Us</a></li>
+                    <li><a href="sitemap.html" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">HTML Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+            <p style="font-size: 13px; color: #888;">&copy; 2026 TechPulse. 
+                <a href="privacy-policy.html" style="color: inherit; margin: 0 5px;">Privacy</a> | 
+                <a href="terms.html" style="color: inherit; margin: 0 5px;">Terms</a> |
+                <a href="cookie-policy.html" style="color: inherit; margin: 0 5px;">Cookie Policy</a>
+            </p>
+        </div>
+    </footer>
+    
+    <button id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
+
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: var(--card-bg); border-top: 1px solid var(--border-color); padding: 20px; display: none; flex-wrap: wrap; justify-content: space-between; align-items: center; z-index: 9999; box-shadow: 0 -5px 15px rgba(0,0,0,0.1);">
+        <p style="margin: 0; font-size: 14px; max-width: 800px; padding-right: 20px;">
+            <i class="fa-solid fa-cookie-bite" style="color: var(--primary-color);"></i> 
+            TechPulse uses cookies to improve your experience and show personalized ads. By using our site, you agree to our <a href="privacy-policy.html" style="color: var(--primary-color);">Privacy Policy</a>.
+        </p>
+        <button onclick="acceptCookies()" class="btn-primary" style="padding: 8px 20px; font-size: 13px; margin-top: 10px;">Accept & Continue</button>
     </div>
 
     <script src="script.js"></script>
 </body>
 </html>
+                    
