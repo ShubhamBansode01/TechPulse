@@ -108,3 +108,16 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Automatically attach current page link to WhatsApp Share buttons
+document.querySelectorAll('.share-btn.whatsapp').forEach(btn => {
+    let currentUrl = window.location.href; // Ye automatically us page ka link nikal lega
+    let originalHref = btn.getAttribute('href');
+    
+    // Check karega ki link pehle se add toh nahi hai
+    if (!originalHref.includes(currentUrl)) {
+        // Text ke aage space aur website ka link jod dega
+        btn.setAttribute('href', originalHref + " " + currentUrl);
+    }
+});
+
+
