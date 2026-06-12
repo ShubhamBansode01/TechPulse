@@ -1,55 +1,142 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Homepage -->
   <url>
     <loc>https://tech-pulse-nu.vercel.app/index.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.00</priority>
   </url>
+
+  <!-- Main Navigation Pages -->
   <url>
     <loc>https://tech-pulse-nu.vercel.app/about.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.50</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://tech-pulse-nu.vercel.app/contact.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.50</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.80</priority>
   </url>
   <url>
     <loc>https://tech-pulse-nu.vercel.app/sitemap.html</loc>
-    <lastmod>2026-04-24</lastmod>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.50</priority>
   </url>
 
+  <!-- Legal & Policy Pages -->
   <url>
     <loc>https://tech-pulse-nu.vercel.app/privacy-policy.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.30</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
   </url>
   <url>
     <loc>https://tech-pulse-nu.vercel.app/terms.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.30</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
   </url>
   <url>
     <loc>https://tech-pulse-nu.vercel.app/cookie-policy.html</loc>
-    <lastmod>2026-04-24</lastmod>
-    <priority>0.30</priority>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.40</priority>
   </url>
 
-  <url><loc>https://tech-pulse-nu.vercel.app/article.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article2.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article3.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article4.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article5.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article6.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article7.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article8.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article9.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article10.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article11.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article12.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article13.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article14.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
-  <url><loc>https://tech-pulse-nu.vercel.app/article15.html</loc><lastmod>2026-04-24</lastmod><priority>0.80</priority></url>
+  <!-- Article Pages -->
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article2.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article3.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article4.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article5.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article6.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article7.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article8.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article9.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article10.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article11.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article12.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article13.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article14.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://tech-pulse-nu.vercel.app/article15.html</loc>
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.70</priority>
+  </url>
 </urlset>
