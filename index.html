@@ -7,6 +7,7 @@
     <meta name="google-site-verification" content="wc775B-DmbPJpNzp3fy7JHb2iK1hoyoKddfmj_vKJIg" />
     <title>TechPulse | Premium Tech Insights</title>
     
+    <!-- SEO & Social Meta Tags -->
     <link rel="canonical" href="https://tech-pulse-nu.vercel.app/index.html"> 
     <meta name="description" content="TechPulse: Your source for premium tech insights, smartphone comparisons, and beginner-friendly coding tutorials. Stay updated with the latest in 2026."> 
     
@@ -21,9 +22,16 @@
     <meta name="twitter:description" content="Expert tech reviews and smartphone comparisons for 2026.">
     <meta name="twitter:image" content="https://tech-pulse-nu.vercel.app/logo.png">
 
+    <!-- Performance: Preconnect & DNS Prefetch -->
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://picsum.photos">
+    <link rel="dns-prefetch" href="https://picsum.photos">
+
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     
+    <!-- Schema Markup: Organization & Website -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -61,9 +69,10 @@
     <header>
         <a href="index.html" class="logo"><i class="fa-solid fa-microchip"></i> TechPulse</a>
         
-        <div class="search-container" style="display: flex; align-items: center; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 20px; padding: 5px 15px; margin: 0 15px; flex-grow: 1; max-width: 400px;">
+        <!-- Search Container with Proper Styling -->
+        <div class="search-container" style="display: flex; align-items: center; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 20px; padding: 5px 15px; margin: 0 1rem;">
             <i class="fa-solid fa-magnifying-glass" style="color: #888;"></i>
-            <input type="text" id="site-search" placeholder="Search articles..." onkeyup="performSearch()" style="border: none; background: transparent; outline: none; padding: 8px; width: 100%; color: var(--text-color);">
+            <input type="text" id="site-search" placeholder="Search articles..." aria-label="Search articles" onkeyup="performSearch()" style="border: none; background: transparent; outline: none; padding: 8px; width: 100%; color: var(--text-color);">
         </div>
 
         <nav id="nav-menu">
@@ -75,317 +84,239 @@
             <button id="theme-toggle" class="btn-icon" aria-label="Toggle Theme">
                 <i class="fa-solid fa-moon"></i>
             </button>
-            <button id="menu-toggle" class="btn-icon hamburger">
+            <button id="menu-toggle" class="btn-icon hamburger" aria-label="Toggle Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </div>
     </header>
     
-    <div class="container">
+    <main class="container">
         
         <h1 style="text-align: center; margin-top: 20px; margin-bottom: 30px; color: var(--primary-color);">Latest Tech Insights</h1>
         
+        <!-- Article 1: Motorola H70 Pro Plus -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=20" loading="lazy" alt="Motorola H70 Pro Plus" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=20" loading="lazy" width="800" height="400" alt="Motorola H70 Pro Plus smartphone with 144Hz OLED display" class="featured-img">
             <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Smartphone Review</span>
             <h2><a href="article20.html">Motorola H70 Pro Plus Review: A Highly Balanced Flagship Experience</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> June 12, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-06-12">June 12, 2026</time> | By Tech Team</p>
             <p>Discover the complete breakdown of the Motorola H70 Pro Plus. From its 144Hz OLED display to its quad-50MP camera setup and Dimensity 8500 Extreme processor...</p>
             <br>
             <a href="article20.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 2: Daily Tech Roundup -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=19" loading="lazy" alt="Tech News" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=19" loading="lazy" width="800" height="400" alt="Latest tech news and industry updates" class="featured-img">
             <span class="badge"><i class="fa-solid fa-newspaper"></i> Tech News</span>
             <h2><a href="article19.html">Daily Tech Roundup: Apple's AI Leap & Smartphone Market Trends</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> June 12, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-06-12">June 12, 2026</time> | By Tech Team</p>
             <p>Catch up on the latest tech news. Apple integrates Gemini into Siri, Meta builds a data center in Gujarat, and major smartphone leaks from Xiaomi and OnePlus...</p>
             <br>
             <a href="article19.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 3: Motorola Signature Review -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=18" loading="lazy" alt="Motorola Signature" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=18" loading="lazy" width="800" height="400" alt="Motorola Signature smartphone with 165Hz display" class="featured-img">
             <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Smartphone Review</span>
             <h2><a href="article18.html">Motorola Signature Review: The Ultimate Flagship Killer?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> June 12, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-06-12">June 12, 2026</time> | By Tech Team</p>
             <p>A comprehensive review of the Motorola Signature series. Explore its incredible 165Hz display, triple 50MP cameras, and flagship performance under ₹60,000...</p>
             <br>
             <a href="article18.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 4: Infinix Note 60 Pro -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=17" loading="lazy" alt="Infinix Note 60 Pro" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=17" loading="lazy" width="800" height="400" alt="Infinix Note 60 Pro with Qualcomm processor and LED matrix display" class="featured-img">
             <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Smartphone Review</span>
             <h2><a href="article17.html">Infinix Note 60 Pro Review: A Shift to Qualcomm Silicon</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> June 12, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-06-12">June 12, 2026</time> | By Tech Team</p>
             <p>An in-depth look at the Infinix Note 60 Pro. Features a Qualcomm processor, 6500mAh battery, rear LED matrix display, and specialized JBL-tuned MagPower audio...</p>
             <br>
             <a href="article17.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 5: Vivo V60 -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=16" loading="lazy" alt="Vivo V60" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=16" loading="lazy" width="800" height="400" alt="Vivo V60 smartphone with ZEISS camera system" class="featured-img">
             <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Smartphone Review</span>
             <h2><a href="article16.html">Vivo V60 Review: Specifications, ZEISS Camera, and Performance</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> June 12, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-06-12">June 12, 2026</time> | By Tech Team</p>
             <p>An in-depth review of the Vivo V60. Explore its Snapdragon 7 Gen 4 performance, ZEISS-tuned cameras, and impressive 6500mAh battery...</p>
             <br>
             <a href="article16.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 6: OnePlus vs Nothing Phone -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=10" loading="lazy" alt="Smartphone Comparison" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=10" loading="lazy" width="800" height="400" alt="OnePlus Nord CE 4 vs Nothing Phone 2a smartphone comparison" class="featured-img">
             <span class="badge"><i class="fa-solid fa-mobile-screen"></i> Smartphone Showdown</span>
             <h2><a href="article.html">OnePlus Nord CE 4 vs Nothing Phone (2a): Which is Better?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 9, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-09">April 9, 2026</time> | By Tech Team</p>
             <p>If you are looking to buy a new smartphone this year, the ₹20,000 to ₹25,000 price range is the sweet spot. You get premium features without emptying your wallet...</p>
             <br>
             <a href="article.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 7: Best Laptops -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=1" loading="lazy" alt="Laptop on desk" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=1" loading="lazy" width="800" height="400" alt="Laptop on desk for coding and design" class="featured-img">
             <span class="badge"><i class="fa-solid fa-laptop-code"></i> Laptops & PCs</span>
             <h2><a href="article2.html">Best Laptops for Coding, Design, and Students in 2026</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 8, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-08">April 8, 2026</time> | By Tech Team</p>
             <p>From rendering complex UI mockups to writing full-stack code, having the right machine matters. Here is our beginner-friendly guide to buying a laptop that won't lag.</p>
             <br>
             <a href="article2.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 8: Speed Up Android Phone -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=2" loading="lazy" alt="Android smartphone" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=2" loading="lazy" width="800" height="400" alt="Android smartphone with optimization tips" class="featured-img">
             <span class="badge"><i class="fa-brands fa-android"></i> Android Tips</span>
             <h2><a href="article3.html">5 Easy Ways to Speed Up Your Old Android Phone</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 5, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-05">April 5, 2026</time> | By Tech Team</p>
             <p>Is your phone hanging or freezing? Don't buy a new one just yet! Follow these 5 simple, free steps to make your old Android smartphone run like it is brand new.</p>
             <br>
             <a href="article3.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 9: What is 5G? -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=3" loading="lazy" alt="Wireless network" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=3" loading="lazy" width="800" height="400" alt="Wireless 5G network technology" class="featured-img">
             <span class="badge"><i class="fa-solid fa-wifi"></i> Tech Explained</span>
             <h2><a href="article4.html">What is 5G? Do You Actually Need a 5G Phone Yet?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 2, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-02">April 2, 2026</time> | By Tech Team</p>
             <p>Everyone is talking about 5G network speeds, but is it worth upgrading your current phone? We break down the jargon into simple English for beginners.</p>
             <br>
             <a href="article4.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 10: Smartwatches vs Fitness Bands -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=4" loading="lazy" alt="Smartwatch" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=4" loading="lazy" width="800" height="400" alt="Smartwatch and fitness band wearables" class="featured-img">
             <span class="badge"><i class="fa-solid fa-stopwatch"></i> Wearables</span>
             <h2><a href="article5.html">Smartwatches vs Fitness Bands: Which Should You Buy?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 28, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-03-28">March 28, 2026</time> | By Tech Team</p>
             <p>Should you spend ₹5,000 on a smartwatch or ₹2,000 on a fitness band? We compare the health tracking, battery life, and style to help you decide.</p>
             <br>
             <a href="article5.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 11: Protect Smartphone from Hackers -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=5" loading="lazy" alt="Cyber security" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=5" loading="lazy" width="800" height="400" alt="Cybersecurity and mobile phone protection" class="featured-img">
             <span class="badge"><i class="fa-solid fa-shield-halved"></i> Security & Privacy</span>
             <h2><a href="article6.html">How to Protect Your Smartphone from Hackers (Beginner Guide)</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 22, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-03-22">March 22, 2026</time> | By Tech Team</p>
             <p>Scams and phishing links are everywhere. Learn the 3 most important settings you must change right now to keep your WhatsApp and bank accounts completely safe.</p>
             <br>
             <a href="article6.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 12: Top 5 Free AI Tools -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=6" loading="lazy" alt="AI Tools" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=6" loading="lazy" width="800" height="400" alt="AI tools and artificial intelligence applications" class="featured-img">
             <span class="badge"><i class="fa-solid fa-robot"></i> AI Tools</span>
             <h2><a href="article7.html">Top 5 Free AI Tools Every Student and Creator Should Use</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 15, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-03-15">March 15, 2026</time> | By Tech Team</p>
             <p>ChatGPT is just the beginning. Discover the best free AI tools for generating amazing images, writing emails, and editing videos in seconds.</p>
             <br>
             <a href="article7.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 13: Wireless Earbuds Buying Guide -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=7" loading="lazy" alt="Wireless earbuds" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=7" loading="lazy" width="800" height="400" alt="Wireless earbuds and TWS headphones" class="featured-img">
             <span class="badge"><i class="fa-solid fa-headphones"></i> Audio Gear</span>
             <h2><a href="article8.html">Wireless Earbuds Buying Guide: Best TWS Under ₹2,000</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 10, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-03-10">March 10, 2026</time> | By Tech Team</p>
             <p>Looking for deep bass, clear calling, and long battery life? We tested the top budget TWS earbuds from boAt, Noise, and Realme to find the ultimate winner.</p>
             <br>
             <a href="article8.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 14: Dark Mode vs Light Mode -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=8" loading="lazy" alt="Dark Mode" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=8" loading="lazy" width="800" height="400" alt="Dark mode and light mode display comparison" class="featured-img">
             <span class="badge"><i class="fa-solid fa-eye"></i> Health & Tech</span>
             <h2><a href="article9.html">Dark Mode vs Light Mode: Which is Actually Better for Your Eyes?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 5, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-03-05">March 5, 2026</time> | By Tech Team</p>
             <p>Everyone loves a sleek dark theme, but does it actually save battery and reduce eye strain? The scientific truth might surprise you.</p>
             <br>
             <a href="article9.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
+        <!-- Article 15: Build Your First Tech Blog -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=9" loading="lazy" alt="Blogging" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=9" loading="lazy" width="800" height="400" alt="Blogging and web development" class="featured-img">
             <span class="badge"><i class="fa-solid fa-globe"></i> Web Development</span>
             <h2><a href="article10.html">How to Build Your First Tech Blog and Earn with AdSense</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> February 28, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-02-28">February 28, 2026</time> | By Tech Team</p>
             <p>A step-by-step beginner's guide to creating a professional, responsive website from scratch and getting it approved by Google's monetization program.</p>
             <br>
             <a href="article10.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 16: Best Smart Home Devices -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=11" loading="lazy" alt="Smart Home" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=11" loading="lazy" width="800" height="400" alt="Smart home devices and automation" class="featured-img">
             <span class="badge"><i class="fa-solid fa-house-laptop"></i> Smart Home</span>
             <h2><a href="article11.html">Best Smart Home Devices for Beginners in 2026</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-10">April 10, 2026</time> | By Tech Team</p>
             <p>Turning your house into a smart home doesn't have to be expensive or complicated. Discover the best entry-level devices to automate your life...</p>
             <br>
             <a href="article11.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 17: Graphics Card Guide -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=12" loading="lazy" alt="Graphic Card" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=12" loading="lazy" width="800" height="400" alt="Graphics card for gaming PC" class="featured-img">
             <span class="badge"><i class="fa-solid fa-gamepad"></i> Gaming PC</span>
             <h2><a href="article12.html">How to Choose the Right Graphics Card for PC Gaming</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-10">April 10, 2026</time> | By Tech Team</p>
             <p>Confused by RTX, RX, and VRAM? We break down everything you need to know to buy the perfect GPU for your gaming setup without overspending...</p>
             <br>
             <a href="article12.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 18: Foldable Smartphones -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=13" loading="lazy" alt="Foldable Phone" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=13" loading="lazy" width="800" height="400" alt="Foldable smartphone technology" class="featured-img">
             <span class="badge"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Trends</span>
             <h2><a href="article13.html">The Rise of Foldable Smartphones: Are They Worth It in 2026?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-10">April 10, 2026</time> | By Tech Team</p>
             <p>Foldable phones have come a long way since their rocky start. We look at the durability, software, and pricing to see if you should fold or stay...</p>
             <br>
             <a href="article13.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 19: Chrome Extensions -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=14" loading="lazy" alt="Chrome Extensions" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=14" loading="lazy" width="800" height="400" alt="Chrome browser extensions for developers" class="featured-img">
             <span class="badge"><i class="fa-solid fa-puzzle-piece"></i> Productivity</span>
             <h2><a href="article14.html">Essential Chrome Extensions for Productive Developers</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
-            <p>Boost your workflow with these must-have browser extensions designed specifically for web developers and UI/UX designers...</p>
-            <br>
-            <a href="article14.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-<article class="card">
-            <img src="https://picsum.photos/800/400?random=4" loading="lazy" alt="Smartwatch" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-stopwatch"></i> Wearables</span>
-            <h2><a href="article5.html">Smartwatches vs Fitness Bands: Which Should You Buy?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 28, 2026 | By Tech Team</p>
-            <p>Should you spend ₹5,000 on a smartwatch or ₹2,000 on a fitness band? We compare the health tracking, battery life, and style to help you decide.</p>
-            <br>
-            <a href="article5.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=5" loading="lazy" alt="Cyber security" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-shield-halved"></i> Security & Privacy</span>
-            <h2><a href="article6.html">How to Protect Your Smartphone from Hackers (Beginner Guide)</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 22, 2026 | By Tech Team</p>
-            <p>Scams and phishing links are everywhere. Learn the 3 most important settings you must change right now to keep your WhatsApp and bank accounts completely safe.</p>
-            <br>
-            <a href="article6.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=6" loading="lazy" alt="AI Tools" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-robot"></i> AI Tools</span>
-            <h2><a href="article7.html">Top 5 Free AI Tools Every Student and Creator Should Use</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 15, 2026 | By Tech Team</p>
-            <p>ChatGPT is just the beginning. Discover the best free AI tools for generating amazing images, writing emails, and editing videos in seconds.</p>
-            <br>
-            <a href="article7.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=7" loading="lazy" alt="Wireless earbuds" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-headphones"></i> Audio Gear</span>
-            <h2><a href="article8.html">Wireless Earbuds Buying Guide: Best TWS Under ₹2,000</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 10, 2026 | By Tech Team</p>
-            <p>Looking for deep bass, clear calling, and long battery life? We tested the top budget TWS earbuds from boAt, Noise, and Realme to find the ultimate winner.</p>
-            <br>
-            <a href="article8.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=8" loading="lazy" alt="Dark Mode" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-eye"></i> Health & Tech</span>
-            <h2><a href="article9.html">Dark Mode vs Light Mode: Which is Actually Better for Your Eyes?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> March 5, 2026 | By Tech Team</p>
-            <p>Everyone loves a sleek dark theme, but does it actually save battery and reduce eye strain? The scientific truth might surprise you.</p>
-            <br>
-            <a href="article9.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-        
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=9" loading="lazy" alt="Blogging" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-globe"></i> Web Development</span>
-            <h2><a href="article10.html">How to Build Your First Tech Blog and Earn with AdSense</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> February 28, 2026 | By Tech Team</p>
-            <p>A step-by-step beginner's guide to creating a professional, responsive website from scratch and getting it approved by Google's monetization program.</p>
-            <br>
-            <a href="article10.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=11" loading="lazy" alt="Smart Home" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-house-laptop"></i> Smart Home</span>
-            <h2><a href="article11.html">Best Smart Home Devices for Beginners in 2026</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
-            <p>Turning your house into a smart home doesn't have to be expensive or complicated. Discover the best entry-level devices to automate your life...</p>
-            <br>
-            <a href="article11.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=12" loading="lazy" alt="Graphic Card" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-gamepad"></i> Gaming PC</span>
-            <h2><a href="article12.html">How to Choose the Right Graphics Card for PC Gaming</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
-            <p>Confused by RTX, RX, and VRAM? We break down everything you need to know to buy the perfect GPU for your gaming setup without overspending...</p>
-            <br>
-            <a href="article12.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=13" loading="lazy" alt="Foldable Phone" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-mobile-screen-button"></i> Mobile Trends</span>
-            <h2><a href="article13.html">The Rise of Foldable Smartphones: Are They Worth It in 2026?</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
-            <p>Foldable phones have come a long way since their rocky start. We look at the durability, software, and pricing to see if you should fold or stay...</p>
-            <br>
-            <a href="article13.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
-        </article>
-
-        <article class="card">
-            <img src="https://picsum.photos/800/400?random=14" loading="lazy" alt="Chrome Extensions" class="featured-img">
-            <span class="badge"><i class="fa-solid fa-puzzle-piece"></i> Productivity</span>
-            <h2><a href="article14.html">Essential Chrome Extensions for Productive Developers</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-10">April 10, 2026</time> | By Tech Team</p>
             <p>Boost your workflow with these must-have browser extensions designed specifically for web developers and UI/UX designers...</p>
             <br>
             <a href="article14.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
 
+        <!-- Article 20: Cloud Storage Comparison -->
         <article class="card">
-            <img src="https://picsum.photos/800/400?random=15" loading="lazy" alt="Cloud Storage" class="featured-img">
+            <img src="https://picsum.photos/800/400?random=15" loading="lazy" width="800" height="400" alt="Cloud storage services comparison" class="featured-img">
             <span class="badge"><i class="fa-solid fa-cloud"></i> Software</span>
             <h2><a href="article15.html">Cloud Storage Comparison: Google Drive vs. OneDrive vs. iCloud</a></h2>
-            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> April 10, 2026 | By Tech Team</p>
+            <p style="color: #888; font-size: 14px; margin: 10px 0;"><i class="fa-regular fa-calendar"></i> <time datetime="2026-04-10">April 10, 2026</time> | By Tech Team</p>
             <p>Which cloud service offers the best security, free storage, and cross-platform support? We compare the giants to find the best value for you...</p>
             <br>
             <a href="article15.html" class="btn-primary">Read Full Article <i class="fa-solid fa-arrow-right"></i></a>
         </article>
         
-    </div>
+    </main>
     
+    <!-- Footer -->
     <footer style="background: var(--card-bg); padding: 50px 20px 30px; border-top: 1px solid var(--border-color); margin-top: 40px;">
         <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 40px; text-align: left;">
             <div>
@@ -405,7 +336,7 @@
                 <ul style="list-style: none; font-size: 14px; line-height: 2;">
                     <li><a href="about.html" style="color: var(--text-color); text-decoration: none;">About Creator</a></li>
                     <li><a href="contact.html" style="color: var(--text-color); text-decoration: none;">Contact Us</a></li>
-                    <li><a href="sitemap.html" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">HTML Sitemap</a></li>
+                    <li><a href="sitemap.xml" style="color: var(--primary-color); font-weight: bold; text-decoration: none;">Sitemap</a></li>
                 </ul>
             </div>
         </div>
@@ -418,9 +349,11 @@
         </div>
     </footer>
     
-    <button id="scrollTop"><i class="fa-solid fa-chevron-up"></i></button>
+    <!-- Back to Top Button -->
+    <button id="scrollTop" aria-label="Back to top"><i class="fa-solid fa-chevron-up"></i></button>
     
-    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: var(--card-bg); border-top: 1px solid var(--border-color); padding: 20px; display: none; flex-wrap: wrap; justify-content: space-between; align-items: center; z-index: 9999; box-shadow: 0 -5px 15px rgba(0,0,0,0.1);">
+    <!-- Cookie Banner -->
+    <div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; width: 100%; background: var(--card-bg); border-top: 1px solid var(--border-color); padding: 20px; display: none; flex-wrap: wrap; align-items: center; z-index: 1000;">
         <p style="margin: 0; font-size: 14px; max-width: 800px; padding-right: 20px;">
             <i class="fa-solid fa-cookie-bite" style="color: var(--primary-color);"></i> 
             TechPulse uses cookies to improve your experience and show personalized ads. By using our site, you agree to our <a href="privacy-policy.html" style="color: var(--primary-color);">Privacy Policy</a>.
@@ -431,4 +364,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-        
