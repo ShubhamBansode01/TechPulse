@@ -8,7 +8,6 @@ Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
 Disallow: /*.json
-Disallow: /*.xml
 Disallow: /*?utm_
 Crawl-delay: 1
 
