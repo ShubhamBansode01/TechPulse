@@ -1,28 +1,26 @@
 # TechPulse Robots.txt
 # Directives for search engine crawlers
 
-# Allow all search engines
+# Default rules for all bots
 User-agent: *
 Allow: /
 Disallow: /admin/
 Disallow: /private/
 Disallow: /temp/
-Disallow: /*.json$
-Disallow: /*.xml$
-Disallow: *?utm_
+Disallow: /*.json
+Disallow: /*.xml
+Disallow: /*?utm_
 Crawl-delay: 1
 
-# Google-specific
+# Google can crawl faster
 User-agent: Googlebot
-Allow: /
 Crawl-delay: 0
 
-# Bing-specific
+# Bing standard crawl
 User-agent: Bingbot
-Allow: /
 Crawl-delay: 1
 
-# Block bad bots
+# Block low-quality/aggressive bots
 User-agent: MJ12bot
 Disallow: /
 
@@ -33,5 +31,5 @@ User-agent: SemrushBot
 User-agent: SemrushBot-SA
 Disallow: /
 
-# Sitemap location
+# Sitemap
 Sitemap: https://tech-pulse-nu.vercel.app/sitemap.xml
