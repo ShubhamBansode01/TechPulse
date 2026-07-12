@@ -123,6 +123,33 @@
             font-weight: 600;
             margin-bottom: 10px;
         }
+
+        /* Search Container Fix */
+        .search-container {
+            display: flex !important;
+            align-items: center !important;
+            background: var(--bg-color) !important;
+            border: 1px solid var(--border-color) !important;
+            border-radius: 20px !important;
+            padding: 5px 15px !important;
+            margin: 0 10px !important;
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search-container input {
+            border: none !important;
+            background: transparent !important;
+            outline: none !important;
+            padding: 8px 10px !important;
+            width: 100% !important;
+            color: var(--text-color);
+        }
+
+        .search-container i {
+            color: #888 !important;
+            margin-right: 5px;
+        }
     </style>
     
     <!-- Schema Markup: Organization & Website -->
@@ -164,9 +191,9 @@
         <a href="index.html" class="logo"><i class="fa-solid fa-microchip"></i> TechPulse</a>
         
         <!-- Search Container with Proper Styling -->
-        <div class="search-container" style="display: flex; align-items: center; background: var(--bg-color); border: 1px solid var(--border-color); border-radius: 20px; padding: 5px 15px; margin: 0 1[...]
-            <i class="fa-solid fa-magnifying-glass" style="color: #888;"></i>
-            <input type="text" id="site-search" placeholder="Search articles..." aria-label="Search articles" onkeyup="performSearch()" style="border: none; background: transparent; outline: none; pad[...]
+        <div class="search-container">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="site-search" placeholder="Search articles..." aria-label="Search articles" onkeyup="performSearch()">
         </div>
 
         <nav id="nav-menu">
@@ -418,7 +445,7 @@
                     <!-- Hindi Video 1: Motorola H70 Pro Plus Review -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -431,7 +458,7 @@
                     <!-- Hindi Video 2: OnePlus Nord CE 4 vs Motorola -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/9bZkp7q19f0?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -444,7 +471,7 @@
                     <!-- Hindi Video 3: Best Budget Phones 2026 -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/kffacxfA7g4?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/kffacxfA7g4?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -457,7 +484,7 @@
                     <!-- Hindi Video 4: Gaming Phones Test -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/CVrFjO-xIQU?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/CVrFjO-xIQU?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -470,7 +497,7 @@
                     <!-- Hindi Video 5: Camera Phone Comparison -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/jNQXAC9IVRw?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -483,7 +510,7 @@
                     <!-- Hindi Video 6: Laptop for Students -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/5C3nF6NPPCw?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/5C3nF6NPPCw?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -496,10 +523,10 @@
                     <!-- Hindi Video 7: Android Phone Optimization -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
-                            <span class="language-badge">🇮🇧 Hindi</span>
+                            <span class="language-badge">🇮🇳 Hindi</span>
                             <h3 class="video-title">पुराना Android Phone तेज़ कैसे करें? - 10 Tips & Tricks</h3>
                             <p class="video-meta"><i class="fa-solid fa-calendar"></i> May 28, 2026 | <i class="fa-solid fa-user"></i> Tech Tips</p>
                             <p class="video-description">आपके पुराने Android स्मार्टफोन को तेज़ कैसे बनाएं। स्पीड बढ़ाने के सभी तरीके और ट्रिक्स।</p>
@@ -509,7 +536,7 @@
                     <!-- Hindi Video 8: Wireless Earbuds Test -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/z0AxeZ_1CXs?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/z0AxeZ_1CXs?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
@@ -522,11 +549,11 @@
                     <!-- Hindi Video 9: Smartphone Security Tips -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/uK9KmPGVyJ8?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/uK9KmPGVyJ8?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
-                            <h3 class="video-title">फोन को हैकर्स से ��ैसे बचाएं? - Complete Security Guide</h3>
+                            <h3 class="video-title">फोन को हैकर्स से कैसे बचाएं? - Complete Security Guide</h3>
                             <p class="video-meta"><i class="fa-solid fa-calendar"></i> May 22, 2026 | <i class="fa-solid fa-user"></i> Cyber Security</p>
                             <p class="video-description">अपने स्मार्टफोन को सुरक्षित रखने के तरीके। सभी महत्वपूर्ण सेटिंग्स जो आपको बदलनी चाहिए।</p>
                         </div>
@@ -535,20 +562,18 @@
                     <!-- Hindi Video 10: Free AI Tools Explained -->
                     <div class="video-card">
                         <div class="video-container">
-                            <iframe src="https://www.youtube.com/embed/-Nj9TfC7A0I?rel=0&modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
+                            <iframe src="https://www.youtube.com/embed/-Nj9TfC7A0I?rel=0&amp;modestbranding=1" allowfullscreen="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="video-info">
                             <span class="language-badge">🇮🇳 Hindi</span>
-                            <h3 class="video-title">Free AI Tools जो आपकी Life बदल देंगे - ChatGPT, Midjourney, और अन्य</h3>
+                            <h3 class="video-title">Free AI Tools जो आपकी Life बदल देंगे - ChatGPT, Midjourney और अन्य</h3>
                             <p class="video-meta"><i class="fa-solid fa-calendar"></i> May 20, 2026 | <i class="fa-solid fa-user"></i> AI Guru</p>
-                            <p class="video-description">सभी फ्री AI टूल्स जो आप उपयोग कर सकते हैं। ChatGPT, इमेज जनरेशन और वीडियो एडिटिंग टूल्स।</p>
+                            <p class="video-description">सभी फ्र��� AI टूल्स जो आप उपयोग कर सकते हैं। ChatGPT, इमेज जनरेशन और वीडियो एडिटिंग टूल्स।</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- SECTION: FILLER ARTICLES (21-35) -->
 
         <!-- Article 21: Budget Phones Under 15000 -->
         <article class="card">
