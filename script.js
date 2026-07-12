@@ -2,21 +2,42 @@
    GLOBAL FUNCTIONS (For HTML interactions)
    ========================================= */
 
-// 1. Live Search Logic
+// 1. Live Search Logic - IMPROVED
 function performSearch() {
     const searchInput = document.getElementById('site-search');
     if (searchInput) {
         const filter = searchInput.value.toLowerCase();
         const cards = document.querySelectorAll('.card');
+        let visibleCount = 0;
 
         cards.forEach(card => {
             const title = card.querySelector('h2')?.innerText.toLowerCase() || "";
-            if (title.includes(filter)) {
+            const description = card.querySelector('p')?.innerText.toLowerCase() || "";
+            const badge = card.querySelector('.badge')?.innerText.toLowerCase() || "";
+            
+            // Search in title, description, and badge
+            if (title.includes(filter) || description.includes(filter) || badge.includes(filter)) {
                 card.style.display = ""; 
+                visibleCount++;
             } else {
                 card.style.display = "none";
             }
         });
+
+        // Show/hide video section based on search
+        const videoSection = document.querySelector('.video-section');
+        if (videoSection) {
+            if (filter === "" || filter.includes('video') || filter.includes('hindi') || filter.includes('youtube')) {
+                videoSection.style.display = "";
+            } else {
+                videoSection.style.display = "none";
+            }
+        }
+
+        // If no results, show message (optional)
+        if (visibleCount === 0 && filter !== "") {
+            console.log("No articles found for: " + filter);
+        }
     }
 }
 
@@ -106,6 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
     }
+
+    /* --- Ensure YouTube videos load properly --- */
+    const iframes = document.querySelectorAll('iframe');
+    iframes.forEach(iframe => {
+        if (iframe.src && !iframe.src.startsWith('http')) {
+            iframe.src = 'https://www.youtube.com/embed/' + iframe.src;
+        }
+    });
 });
 
 // Automatically attach current page link to WhatsApp Share buttons
@@ -119,5 +148,4 @@ document.querySelectorAll('.share-btn.whatsapp').forEach(btn => {
         btn.setAttribute('href', originalHref + " " + currentUrl);
     }
 });
-
 
